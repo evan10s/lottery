@@ -1,0 +1,19 @@
+/* CSS for styling the lottery ticket.  Includes:
+-Formatting the ticket
+-Distinguishing selected numbers */
+
+table#ticket>tbody>tr>td {
+    border-top: none;
+    text-align: center;
+}
+table > tbody > tr > td > a {
+    color: black !important;
+}
+table > tbody > tr > td > a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+td.selected {
+    font-size: 1.3em;
+    font-weight: bold;
+}

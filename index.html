@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lottery</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700italic,700" rel="stylesheet" type="text/css">
+    <script src="components/bower_components/platform/platform.js"></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="import" href="components/bower_components/font-roboto/roboto.html">
+    <link rel="import" href="components/bower_components/core-scaffold/core-scaffold.html">
+    <link rel="import" href="components/bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="components/bower_components/core-menu/core-menu.html">
+    <link rel="import" href="components/bower_components/core-item/core-item.html">
+    <link rel="import" href="components/bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="components/bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="components/bower_components/core-icons/core-icons.html">
+    <link rel="import" href="components/bower_components/core-icon/core-icon.html">
+    <link rel="import" href="components/bower_components/core-menu-button/core-menu-button.html">
+    <link rel="import" href="components/bower_components/core-item/core-item.html">
+    <link rel="import" href="components/custom/custom-card/custom-card.html">
+    <link rel="import" href="components/custom/lottery-ticket/lottery-ticket.html">
+    <link rel="import" href="components/custom/previous-tickets/previous-tickets.html">
+
+    <style>
+        body {
+            font-family: Roboto, Helvetica, sans-serif;
+        }
+        .title {
+            font-family: "Roboto Condensed";
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+        custom-card.left {
+            float: left;
+        }
+        custom-card.right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body unresolved touch-action="auto">
+    <core-toolbar class="medium-tall">
+        <div flex>Lottery</div>
+        <paper-tabs selected="0" class="bottom fit">
+            <paper-tab>HOME</paper-tab>
+            <paper-tab>SETTINGS</paper-tab>
+        </paper-tabs>
+        <core-menu-button icon="more-vert" halign="right" valign="bottom">
+            <core-item label="Logout" horizontal center layout>
+                <a href="javascript:alert('Someday, I\'ll be a logout button.  I hope.  #dreamer')"></a>
+            </core-item>
+        </core-menu-button>
+    </core-toolbar>
+    <custom-card class="left">
+        <span class="title">Fill out a lottery ticket</span>
+        <lottery-ticket></lottery-ticket>
+    </custom-card>
+    <custom-card class="right">
+        <span class="title">My previous tickets</span>
+        <previous-tickets></previous-tickets>
+    </custom-card>
+
+</body>
+
+</html>

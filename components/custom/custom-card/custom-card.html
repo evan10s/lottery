@@ -1,0 +1,21 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="custom-card">
+    <template>
+        <link rel="stylesheet" href="custom-card.css">
+        <div class="card-container">
+            <div class="card">
+                <content select="span"></content>
+                <br />
+                <br />
+                <content></content>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        Polymer('custom-card', {
+
+        });
+    </script>
+</polymer-element>
