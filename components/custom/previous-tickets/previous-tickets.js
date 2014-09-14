@@ -1,5 +1,6 @@
-Polymer('lottery-ticket', {
+var previousTickets = previousTickets = document.registerElement();
 
-}
 
-);
+}Polymer('previous-tickets', {
+
+});
